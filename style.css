@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth; /*Esto me permite deslizar cuando hago clic en los link del menu*/
+}
+header {
+    background-color: #333;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);/*Sombras*/
+    position: sticky;
+    top: 0;
+    z-index: 1000; /*Asegura que el header este por encima de otros elementos*/
+}
+.nav- {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Styling the name/logo */
+.nombre {
+    font-size: 24px;/*Tamaño de fuente grande*/
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nombre:hover{
+    color: #007bff;
+}
+
+/* estilo para la lista de navegacion */
+.nav {
+    list-style-type: none;/*Esto elimina los puntos de la lista*/
+    margin: 0;
+    padding: 0;
+    display: flex;/*Se alinean los elementos*/
+}
+
+/* estilos para cada item de navegacion*/
+.nav-item {
+    margin-left: 20px;
+}
+
+/*Estilo para lo enlaces de navegacion*/
+.nav-link {
+    color: #ddd;
+    text-decoration: none;/*Esto quita el subrayado*/
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efectos al pasar el raton sobre los enlaces*/
+.nav-link:hover {
+    color: #fff;
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/*Estilo para el enlace activo en la barra de navegación */
+.nav-link.active {
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 4px;
+}
+
+/* Responsivo*/
+@media (max-width: 768px) {
+    .nav- {
+        flex-direction: column;
+    }
+    
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(img/fondo.avif);/*Imagen de fondo*/
+    background-size: cover;/*Asegura que la imagen cubra toda el area del elemento*/
+    height: 100vh;/* Altura del elemento igual a la altura de la ventana del navegador */
+    color: #fff;
+    display: flex;
+    align-items: center;/* Centra los elementos verticalmente */
+}
+.justificado {
+    text-align: justify;
+}
+/* Estilo para el contenedor del banner dentro de la sección de inicio */
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 100px;
+}
+/* Estilo para la imagen dentro del banner */
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid #2e86c1 ;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 70%;
+}
+/* Estilo para el título principal dentro del banner */
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: #ff8000;
+}
+.inicio .contenido-banner .redes .css:hover{
+    background-color: blue;
+}
+.inicio .contenido-banner .redes .js:hover{
+    background-color: yellow;
+}
+
+
+.mi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.mi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.mi h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.mi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.mi .contenido-seccion p span{
+    color: #2e86c1;
+    font-weight: bold;
+}
+.mi .fila .col{
+    width: 50%;
+    text-align: left;
+}
+.mi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.mi .fila .col ul{
+    list-style: none;
+
+}
+.mi .fila .col ul li{
+    margin: 12px 0;
+}
+.mi .fila .col ul li strong{
+    display: inline-block;
+    color: #2e86c1;
+    width: 80px;  
+}
+.mi .fila .col ul li span{
+    background-color: #2e86c1;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.mi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    
+}
+.mi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #d4ac0d ;
+    z-index: -1;
+    transition: 1s;
+}
+.mi button:hover .overlay{
+    width: 100%;
+}
+
+.portfolio{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.portfolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.portfolio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.portfolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portfolio .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.portfolio .galeria .proyecto img{
+    width: 100%;
+    display: block;
+    
+}
+.portfolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28,182,152,.8), #2e86c1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.portfolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.portfolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.portfolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+.imagenes{
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Mantiene la proporción de la imagen y llena el contenedor */
+}
+
+.contacto{
+    background-image: url(img/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2e86c1;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+.contacto .col img{
+    width: 100%;
+}
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: #2e86c1;
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #2e86c1; /* Cambia el color al pasar el ratón */
+}
+
+.footer-bottom {
+    background-color: #252A2E;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 0 10px;
+    }
+
+    .footer-section {
+        margin: 0 auto;
+    }
+
+    .social-links {
+        margin-top: 10px;
+    }
+
+    .social-icon {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+}
+

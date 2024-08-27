@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio </title>
+</head>
+
+<body>
+    <header>
+        <div class="link">
+            <nav class="nav-">
+                <a class="nombre" href="">Francisco Marambio Diaz</a>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mi">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/yo.jpg" alt="">
+            </div>
+            <h1>Francisco Marambio Diaz</h1>
+            <h2>Desarrollador Full-Stack</h2>
+            <div class="redes">
+                <a href=""><i class="fa-brands fa-html5"></i></a>
+                <a class="css" href=""><i class="fa-brands fa-css3-alt"></i></a>
+                <a class="js" href=""><i class="fa-brands fa-js"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="mi" class="mi">
+        <div class="contenido-seccion">
+            <h2>Sobre mi</h2>
+            <p class="justificado"><span>Hola, soy Francisco Marambio Diaz.</span> Como Desarrollador Full-Stack, mi
+                pasión por la
+                tecnología
+                y
+                la
+                programación ha sido el motor que impulsa mi carrera. Me he comprometido a aprender y dominar nuevas
+                tecnologías y a explorar diversos lenguajes de programación, con un enfoque particular en el desarrollo
+                web
+                y móvil. Mi principal objetivo es continuar mi crecimiento profesional, ampliando y profundizando mi
+                conocimiento en el campo de la programación para afrontar los retos tecnológicos del futuro.</p>
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Telefono:</strong>
+                            +56958073254
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <strong>Email:</strong>
+                            francis.joaquin1989@gmail.com
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <strong>Pais:</strong>
+                            Chile
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <strong>Cargo:</strong>
+                            <span>Desarrollador Full-Stack</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="img/CV FranciscoM.D.pdf" download>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <a href="proyectos/ejercicio2/aero.html" target="_blank">
+                    <div class="proyecto">
+                        <img class="imagenes" src="img/proyecto1.PNG" alt="">
+                        <div class="overlay">
+                            <h3>AeroVias Express</h3>
+                            <p>Proyecto</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="proyectos/ejercicio2-/index.html" target="_blank">
+                    <div class="proyecto">
+                        <img class="imagenes" src="img/Skyp.PNG" alt="">
+                        <div class="overlay">
+                            <h3>SKYP</h3>
+                            <p>Proyecto</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="proyectos/ejerciciocolor/index.html" target="_blank">
+                    <div class="proyecto">
+                        <img class="imagenes" src="img/colores.PNG" alt="">
+                        <div class="overlay">
+                            <h3>Colores</h3>
+                            <p>Proyecto</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <div class="col">
+                    <form id="miFormu" action="">
+                        <input type="text" placeholder="Tú Nombre" required>
+                        <input type="text" placeholder="Número telefónico" required>
+                        <input type="text" placeholder="Dirección de correo" required>
+                        <input type="text" placeholder="Tema" required>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        <button id="boton" type="submit">
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+
+                </div>
+                <div class="col">
+                    <img src="img/UBICACION1.PNG" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Puente Alto
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +56958073254
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: francis.joaquin1989@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Francisco Marambio Diaz</h3>
+                <p>Desarrollador Full-Stack</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/notifications/?filter=all" target="_blank" class="social-icon"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/tu-perfil" target="_blank" class="social-icon"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/tu-perfil" target="_blank" class="social-icon"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Francisco Marambio Diaz | Todos los derechos reservados
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
